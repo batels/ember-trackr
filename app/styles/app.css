@@ -49,3 +49,10 @@ body {
 .panel .list-group-item h5 {
   margin-top: 0;
 }
+
+.panel-primary > .panel-heading .badge {
+  color: #428bca;
+  background-color: #fff;
+} 
+
+Excerpt From: Jamie White, Matthew Beale, Christopher Sansone, Wesley Workman, Bradley Priest. “Developing an Ember.js Edge.” iBooks. https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=24F8AB8C5C720F1257E48FF518156D3B
