@@ -1,3 +1,1 @@
-var ApplicationAdapter = DS.FixtureAdapter.extend({});
-
-export default ApplicationAdapter;
+export default DS.FixtureAdapter.extend();

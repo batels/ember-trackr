@@ -4,8 +4,12 @@
     <div class="navbar-header">
      {{#link-to "index" class="navbar-brand"}}EmberTrackr{{/link-to}}
     </div>
-   </div>
-  </header>
+      <ul class="nav navbar-nav">
+        <li>{{#link-to "index"}}Home{{/link-to}}</li>
+        <li>{{#link-to "tickets"}}Tickets{{/link-to}}</li>
+      </ul>
+    </div>
+</header> 
   <div role="main" class="container">
     {{outlet}}
   </div>
@@ -15,3 +19,5 @@
   <div class="container">
   <p class="text-muted credit">Copyright &copy; {{currentYear}} EmberTrackr Inc.</p>
 </div>
+
+
