@@ -2,7 +2,10 @@
 	<div class="col-md-4">
 		<nav class="list-group">
 		 {{#each}}
-				{{#link-to "tickets.ticket" this class="list-group-item"}}{{title}}{{/link-to}}
+				{{#link-to "tickets.ticket" this class="list-group-item"}}
+					<span class="badge pull-right">{{status}}</span>
+					{{title}}
+				{{/link-to}}
 		 {{/each}}
 		 </nav>
 	</div>
