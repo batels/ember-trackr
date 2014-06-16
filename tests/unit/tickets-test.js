@@ -65,8 +65,19 @@ test('creating a ticket', function() {
   .click('button:contains("Save")')
   .then(function() {
     ok(find('.list-group-item:contains("My New Ticket")').length,
-'expected new ticket to appear in master list');
+    'expected new ticket to appear in master list');
     ok(find('.panel-title:contains("My New Ticket")').length,
-'expected to see ticket in the details view');
+    'expected to see ticket in the details view');
+    ok(find('.panel-title:contains("Open")').length,
+    'expected ticket status to be "Open"');
+  });
+});
+
+test('cancelling ticket creation', function() {
+  visit('/tickets/new')
+  .click('button:contains("Cancel")')
+  .then(function() {
+    equal(find('[name="title"]').length, 0,
+    'expected not to find title field');
   });
 });
